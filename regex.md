@@ -41,5 +41,35 @@ Capture	hermione+regexone@hogwarts.com	hermione	Success
 
 <!-- Capture HTML Tags -->
 <(\w+)
+
 <!-- From a list of files, caputre only image files ending with .jpg, .png, or .gif -->
 (\w+)\.(jpg|png|gif)$
+
+<!-- Trim whitespace -->
+^\s*(.*)\s*$
+
+<!-- General Lesson -->
+abc...letters
+123...digits
+\d...any digit
+\D...any non-digit
+. ...any character
+\. ... a period
+[a,b,c]...abc exclusively
+[^abc]...not a, b, nor c
+[a-z]...all characters a through z
+[0-9]...all numbers 0 through 9
+\w ...any alphanumeric character
+\W ...any non-alphanumeric character
+{m} ... m repititions 
+{m,n} ... a range of m to n repititions
+* ... zero or more repititions
++ ... one or more repititions
+? ... optional character
+\s ... any whitespace
+\S ... any non-Whitespace
+^...$ ... starts and ends
+(...) ... capture group
+(a(bc)) ... capture sub-group
+(.*) ... caputre all
+(abc|def) ... matches abc or def
